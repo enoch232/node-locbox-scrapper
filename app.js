@@ -21,7 +21,7 @@ request(url, function (error, response, body) {
     var business_websites = $(".cui-content").toArray();
     //Go through the array and display each href. The href strings are located under its elements' attribs of second child.
     for(var i = 0; i< count; i++){
-    	if (business_websites[i].children[1] && business_websites[i]){
+    	if (business_websites[i] && business_websites[i].children[1]){
     		console.log(business_websites[i].children[1].attribs.href);
     	}
     }
